@@ -8,7 +8,4 @@ sudo apt-get install python3-pip
 pip3 install django
 
 # Downloading atom
-sudo apt-get install -y curl
-curl https://atom.io/download/deb --output atom-amd64.deb
-sudo dpkg -i atom-amd64.deb
-sudo apt-get install -f
+sudo apt-get install atom
