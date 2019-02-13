@@ -6,6 +6,11 @@ gnome-terminal --command='ping 10.66.10.68'
 sudo apt-get update
 sudo apt-get install python3-pip
 pip3 install django
+cd Desktop
+git clone https://github.com/lucaspdfborges/sensorweb.git -u lucaspdfborges
 
-# Downloading atom
+# Downloading and launching atom
 sudo apt-get install atom
+atom sensorweb
+cd sensorweb
+source myvenv/bin/activate
