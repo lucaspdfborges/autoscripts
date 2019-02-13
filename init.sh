@@ -1,7 +1,6 @@
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo
 gnome-terminal --command='ping 10.66.10.68'
-http://10.66.10.70/phpmyadmin/
 
 #enable access to repos
 echo "deb-src http://archive.ubuntu.com/ubuntu bionic main restricted  #Added by software-properties
@@ -29,7 +28,7 @@ cd Downloads
 wget -O atom.deb "https://atom.io/download/deb"
 sudo dpkg -i atom.deb
 sudo apt-get install -f
-atom sensorweb
+atom Desktop/sensorweb
 cd sensorweb
 source myvenv/bin/activate
 firefox http://127.0.0.1:8000
