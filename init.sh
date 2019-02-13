@@ -24,5 +24,6 @@ sudo apt-get install atom
 atom sensorweb
 cd sensorweb
 source myvenv/bin/activate
-
+firefox http://127.0.0.1:8000
+python3 manage.py runserver
 
