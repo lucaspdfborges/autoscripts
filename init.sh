@@ -34,6 +34,10 @@ atom
 cd ..
 cd Desktopsensorweb
 source myvenv/bin/activate
+pip3 install djangorestframework
+pip3 install markdown       # Markdown support for the browsable API.
+pip3 install django-filter  # Filtering support
+pip3 install djangorestframework-jwt
 firefox http://127.0.0.1:8000
 python3 manage.py runserver
 
