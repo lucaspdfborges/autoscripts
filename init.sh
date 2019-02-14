@@ -28,8 +28,11 @@ cd Downloads
 wget -O atom.deb "https://atom.io/download/deb"
 sudo dpkg -i atom.deb
 sudo apt-get install -f
-atom Desktop/sensorweb
-cd sensorweb
+atom
+
+# Starting the webapp
+cd ..
+cd Desktopsensorweb
 source myvenv/bin/activate
 firefox http://127.0.0.1:8000
 python3 manage.py runserver
