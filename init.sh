@@ -27,12 +27,12 @@ cd ..
 cd Downloads
 wget -O atom.deb "https://atom.io/download/deb"
 sudo dpkg -i atom.deb
-sudo apt-get install -f
+sudo apt-get install -yY -f
 atom
 
 # Starting the webapp
 cd ..
-cd Desktopsensorweb
+cd Desktop/sensorweb
 source myvenv/bin/activate
 pip3 install djangorestframework
 pip3 install markdown       # Markdown support for the browsable API.
