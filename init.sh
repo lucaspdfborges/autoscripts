@@ -27,7 +27,7 @@ cd ..
 cd Downloads
 wget -O atom.deb "https://atom.io/download/deb"
 sudo dpkg -i atom.deb
-sudo apt-get install -yY -f
+sudo apt-get install -y -f
 atom
 
 # Starting the webapp
