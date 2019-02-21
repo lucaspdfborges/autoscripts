@@ -31,6 +31,11 @@ sudo dpkg -i atom.deb
 sudo apt-get install -y -f
 atom
 
+#Installing NODE
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+sudo apt-get install nodejs
+
 # Starting the webapp
 cd ..
 cd Desktop/sensorweb
