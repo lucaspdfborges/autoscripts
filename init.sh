@@ -32,7 +32,7 @@ sudo apt-get install -y -f
 atom
 
 #Installing NODE
-sudo apt-get install curl
+sudo apt-get install -y curl
 curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
 sudo apt-get install nodejs
 
