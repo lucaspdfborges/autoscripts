@@ -15,6 +15,7 @@ echo "deb-src http://archive.ubuntu.com/ubuntu/ bionic-updates main restricted m
 sleep 5
 
 # setting up django
+sudo rm /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install -y python3-pip
 pip3 install django
