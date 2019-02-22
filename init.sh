@@ -24,7 +24,7 @@ sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
 
 #Cleaning the package system
-sudo apt remove --purge nodejs npm
+sudo apt remove --purge nodejs npm -y
 sudo apt clean
 sudo apt autoclean
 sudo apt install -f
@@ -44,7 +44,11 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install yarn
-wget -O- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | sh
+
+# goo to :
+
+https://github.com/glenpike/npm-g_nosudo
+
 
 # Starting the webapp
 cd ..
