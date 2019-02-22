@@ -23,6 +23,13 @@ cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
 
+#Cleaning the package system
+sudo apt remove --purge nodejs npm
+sudo apt clean
+sudo apt autoclean
+sudo apt install -f
+sudo apt autoremove
+
 # Downloading and launching atom
 cd ..
 cd Downloads
@@ -32,10 +39,11 @@ sudo apt-get install -y -f
 atom
 
 #Installing NODE.JS
-sudo apt-get install -y curl
-curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo apt-get install -y npm
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sudo apt-get update && sudo apt-get install yarn
 
 # Starting the webapp
 cd ..
