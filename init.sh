@@ -38,12 +38,9 @@ sudo dpkg -i atom.deb
 sudo apt-get install -y -f
 atom
 
-#Installing NODE.JS
-sudo apt install curl -y
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install yarn
+#Installing NODE.JS and NPM
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+nvm install node
 
 # goo to :
 
