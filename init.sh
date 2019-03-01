@@ -48,7 +48,7 @@ https://github.com/glenpike/npm-g_nosudo
 
 # Install MongoDB
 wget -O mongodb.deb "https://repo.mongodb.org/apt/ubuntu/dists/bionic/mongodb-org/4.0/multiverse/binary-amd64/mongodb-org-server_4.0.6_amd64.deb"
-udo dpkg -i mongodb.deb
+sudo dpkg -i mongodb.deb
 sudo apt-get install -y -f
 sudo systemctl start mongod
 sudo systemctl status mongod
