@@ -52,6 +52,7 @@ sudo dpkg -i mongodb.deb
 sudo apt-get install -y -f
 sudo systemctl start mongod
 sudo systemctl status mongod
+sudo apt-get install mongodb-clients
 npm i mongoose --save
 
 # Starting the webapp
