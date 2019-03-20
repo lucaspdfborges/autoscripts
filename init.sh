@@ -46,6 +46,13 @@ nvm install node
 
 https://github.com/glenpike/npm-g_nosudo
 
+# Setting up Arduino and ESP32
+wget -c https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux64.tar.xz -O - | tar -xz
+wget -c arduino.tar.xz "https://www.arduino.cc/download_handler.php"
+tar xf arduino.tar.xz
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
 # Install MongoDB
 wget -O mongodb.deb "https://repo.mongodb.org/apt/ubuntu/dists/bionic/mongodb-org/4.0/multiverse/binary-amd64/mongodb-org-server_4.0.6_amd64.deb"
 sudo dpkg -i mongodb.deb
