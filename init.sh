@@ -50,6 +50,9 @@ https://github.com/glenpike/npm-g_nosudo
 wget -c https://www.arduino.cc/download_handler.php?f=/arduino-1.8.9-linux64.tar.xz -O - | tar -xz
 wget -c arduino.tar.xz "https://www.arduino.cc/download_handler.php"
 tar xf arduino.tar.xz
+sudo apt-get install python-pip
+(sudo) pip install pyserial
+sudo usermod -a -G dialout $USER
 
 https://dl.espressif.com/dl/package_esp32_index.json
 
