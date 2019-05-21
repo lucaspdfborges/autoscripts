@@ -27,6 +27,11 @@ git clone https://github.com/lucaspdfborges/sensorweb.git
 mkdir -p /var/run/mysqld
 chown mysql:mysql /var/run/mysqld
 
+#PostgreSQL
+sudo apt-get install postgresql postgresql-contrib
+sudo -i -u postgres
+psql -f /path/to/file.sql
+
 #Cleaning the package system
 sudo apt remove --purge nodejs npm -y
 sudo apt clean
