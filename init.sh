@@ -23,6 +23,10 @@ cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
 
+#MySQL
+mkdir -p /var/run/mysqld
+chown mysql:mysql /var/run/mysqld
+
 #Cleaning the package system
 sudo apt remove --purge nodejs npm -y
 sudo apt clean
