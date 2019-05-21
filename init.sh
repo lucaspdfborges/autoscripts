@@ -31,6 +31,9 @@ chown mysql:mysql /var/run/mysqld
 sudo apt-get install postgresql postgresql-contrib
 sudo -i -u postgres
 psql -f /path/to/file.sql
+\dt
+\q
+ SELECT * FROM "table_name";
 
 #Cleaning the package system
 sudo apt remove --purge nodejs npm -y
