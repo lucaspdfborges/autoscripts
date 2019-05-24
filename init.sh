@@ -88,3 +88,15 @@ pip3 install djangorestframework-jwt
 firefox http://127.0.0.1:8000
 python3 manage.py runserver
 
+#Remove stuff from Ubuntu
+sudo rm -rf /usr/share/applications/ubuntu-amazon-default.desktop
+sudo apt-get remove --purge libreoffice*
+sudo apt-get purge thunderbird* 
+sudo apt-get remove rhythmbox
+sudo apt-get purge aisleriot gnome-sudoku mahjongg ace-of-penguins gnomine gbrainy
+sudo apt-get remove --auto-remove cheese
+sudo apt purge gnome-mines
+sudo apt-get purge totem totem-plugins
+sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku 
+sudo apt-get clean
+sudo apt-get autoremove
