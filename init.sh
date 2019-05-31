@@ -10,6 +10,9 @@ cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
 
+# Open TCP port
+iptables -I INPUT 1 -p tcp --dport 3000 -j ACCEPT
+
 #MySQL
 mkdir -p /var/run/mysqld
 chown mysql:mysql /var/run/mysqld
