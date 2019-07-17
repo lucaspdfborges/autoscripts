@@ -6,6 +6,8 @@ sudo apt-get update
 
 sudo apt-get install -y python3-pip
 pip3 install django
+pip3 install virtualenv
+sudo apt install virtualenv
 cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
