@@ -92,3 +92,18 @@ sudo apt-get purge totem totem-plugins
 sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku 
 sudo apt-get clean
 sudo apt-get autoremove
+
+
+#Docker 
+
+sudo mkdir /etc/systemd/system/docker.service.d
+
+sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf
+
+[Service]
+Environment=http_proxy=http://10.66.10.68:3128/
+Environment=no_proxy=localhost,127.0.0.1
+Environment=https_proxy=http://10.66.10.68:3128/
+
+systemctl daemon-reload
+systemctl restart docker
