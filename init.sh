@@ -107,3 +107,6 @@ Environment=https_proxy=http://10.66.10.68:3128/
 
 systemctl daemon-reload
 systemctl restart docker
+
+/etc/default/docker
+DOCKER_OPTS="--storage-driver=devicemapper"
