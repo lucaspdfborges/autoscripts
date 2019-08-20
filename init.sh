@@ -110,3 +110,10 @@ systemctl restart docker
 
 /etc/default/docker
 DOCKER_OPTS="--storage-driver=devicemapper"
+
+# Redis
+sudo apt install redis-server
+sudo nano /etc/redis/redis.conf
+supervised systemd
+sudo systemctl restart redis.service
+sudo systemctl status redis
