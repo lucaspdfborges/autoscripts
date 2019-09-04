@@ -3,11 +3,7 @@ echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' 
 sudo rm /etc/apt/sources.list
 sudo apt-get update
 
-
-sudo apt-get install -y python3-pip
-pip3 install django
-pip3 install virtualenv
-sudo apt install virtualenv
+sudo apt-get install -y python3-pip && pip3 install django && pip3 install virtualenv && sudo apt install virtualenv -y
 cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
@@ -112,8 +108,7 @@ systemctl restart docker
 DOCKER_OPTS="--storage-driver=devicemapper"
 
 # Redis
-sudo apt install redis-server
-sudo nano /etc/redis/redis.conf
+sudo apt install redis-server -y && sudo nano /etc/redis/redis.conf
 supervised systemd
 sudo systemctl restart redis.service
 sudo systemctl status redis
