@@ -33,9 +33,7 @@ sudo apt autoremove
 # Downloading and launching atom
 cd ..
 cd Downloads
-wget -O atom.deb "https://atom.io/download/deb"
-sudo dpkg -i atom.deb
-sudo apt-get install -y -f
+wget -O atom.deb "https://atom.io/download/deb" && sudo dpkg -i atom.deb && sudo apt-get install -y -f
 atom
 
 #Installing NODE.JS and NPM
