@@ -1,6 +1,5 @@
 #setting up internet connection
-echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo
-sudo rm /etc/apt/sources.list
+echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
 sudo apt-get update
 
 sudo apt-get install -y python3-pip && pip3 install django && pip3 install virtualenv && sudo apt install virtualenv -y
