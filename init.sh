@@ -3,7 +3,7 @@ echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' 
 sudo apt-get update
 
 sudo apt-get install -y python3-pip && pip3 install django && pip3 install virtualenv && sudo apt install virtualenv -y
-sudo apt-get install build-essential python3-dev
+sudo apt-get install build-essential python3.6-dev
 cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
