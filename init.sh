@@ -8,6 +8,13 @@ cd Desktop
 sudo apt-get install -y git
 git clone https://github.com/lucaspdfborges/sensorweb.git
 
+# setting up server
+sudo apt-get install build-essential python3.6-dev
+
+cd sites-enabled
+sudo ln -s ../sites-available/foo.conf .
+ls -l
+
 # Open TCP port
 sudo iptables -I INPUT 1 -p tcp --dport 3000 -j ACCEPT
 
