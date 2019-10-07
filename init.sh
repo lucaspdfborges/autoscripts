@@ -1,3 +1,9 @@
+#Combo
+echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
+sudo apt-get update && sudo apt-get install -y python3-pip && pip3 install django && pip3 install virtualenv && sudo apt install virtualenv -y && wget -O atom.deb "https://atom.io/download/deb" && sudo dpkg -i atom.deb && sudo apt-get install -y -f && sudo apt --fix-broken install -y && sudo apt install redis-server -y && sudo nano /etc/redis/redis.conf
+supervised systemd
+sudo systemctl restart redis.service
+
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
 sudo apt-get update
