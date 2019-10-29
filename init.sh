@@ -5,6 +5,18 @@ sudo apt --fix-broken install -y && sudo apt install redis-server -y && sudo nan
 supervised systemd
 sudo systemctl restart redis.service
 
+#Installing python 3.7
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+tar -xf Python-3.7.4.tgz
+cd Python-3.7.4
+./configure --enable-optimizations
+make -j 8
+sudo make altinstall
+python3.7 --version
+
+
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
 sudo apt-get update
