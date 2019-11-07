@@ -6,11 +6,7 @@ supervised systemd
 sudo systemctl restart redis.service
 
 #Installing pipenv
-mkdir project
-cd project
-export PATH="${HOME}/.local/bin:$PATH"
-pip3 install pipenv
-
+export PATH="${HOME}/.local/bin:$PATH" && pip3 install pipenv
 
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
