@@ -8,6 +8,9 @@ sudo systemctl restart redis.service
 #Installing pipenv
 export PATH="${HOME}/.local/bin:$PATH" && pip3 install pipenv
 
+# Improve Zoom
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
 sudo apt-get update
