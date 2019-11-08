@@ -8,8 +8,13 @@ sudo systemctl restart redis.service
 #Installing pipenv
 export PATH="${HOME}/.local/bin:$PATH" && pip3 install pipenv
 
-# Improve Zoom
+# Improve Zoom && Change Theme
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+git clone https://github.com/horst3180/arc-theme --depth 1 && cd arc-theme
+sudo apt-get update && sudo apt-get install arc-theme
+wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
+sudo apt-key add - < Release.key
+sudo apt install gnome-tweaks
 
 #setting up internet connection
 echo 'Defaults        env_keep = "http_proxy ftp_proxy"' | sudo EDITOR='tee -a' visudo && sudo rm /etc/apt/sources.list
