@@ -48,6 +48,14 @@ psql -f /path/to/file.sql
 \q
  SELECT * FROM "table_name";
 
+sudo nano /etc/postgresql/10/main/postgresql.conf
+## trocar por:
+list_addresses = '*'
+sudo nano /etc/postgresql/10/main/pg_hba.conf 
+## adicionar of final:
+host    all             all             10.66.22.138/32         trust
+sudo iptables -I INPUT 1 -p tcp --dport 5432 -j ACCEPT
+
 #Cleaning the package system
 sudo apt remove --purge nodejs npm -y
 sudo apt clean
