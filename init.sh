@@ -143,3 +143,13 @@ sudo apt --fix-broken install -y && sudo apt install redis-server -y && sudo nan
 supervised systemd
 sudo systemctl restart redis.service
 sudo systemctl status redis
+
+
+# Virtual box 
+
+sudo apt install virtualbox
+ - access :        http://download.virtualbox.org/virtualbox/5.2.10/
+ - download:       Oracle_VM_VirtualBox_Extension_Pack-5.2.10.vbox-extpack            
+sudo usermod -aG vboxusers ubuntu
+- logout, login
+- Settings -> Network -> NAT ;  Advanced -> Port Forwarding -> Host: 7777;  Guest 7575
