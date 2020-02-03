@@ -120,6 +120,9 @@ sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
 sudo apt-get clean
 sudo apt-get autoremove
 
+# Fritzing - Arduino
+
+sudo apt install fritzing fritzing-data fritzing-parts
 
 #Docker 
 
