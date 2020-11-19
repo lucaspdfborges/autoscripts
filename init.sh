@@ -5,6 +5,14 @@ sudo apt --fix-broken install -y && sudo apt install redis-server -y && sudo nan
 supervised systemd
 sudo systemctl restart redis.service
 
+#installing VSCode
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+
 #Installing pipenv
 export PATH="${HOME}/.local/bin:$PATH" && pip3 install pipenv
 
